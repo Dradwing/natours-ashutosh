@@ -4,7 +4,8 @@ import axios from 'axios';
 import { showAlert } from './alerts';
 
 const stripe = Stripe(
-  'pk_test_51LZcsHSCynPOuVgGet5Rz1oebPZCAfIcXFE97tx5435fgYNVRITv8cpGcVjfk4QscSbZwkDufaWtGRfZ7BEyYTig00gFPS6zgE'
+  'pk_test_51LZcsHSCynPOuVgGet5Rz1oebPZCAfIcXFE97tx5435fgYNVRITv8cpGcVjfk4QscSbZwkDufaWtGRfZ7BEyYTig00gFPS6zgE',
+  { apiVersion: '2020-08-27' }
 );
 
 export const bookTour = async tourId => {
